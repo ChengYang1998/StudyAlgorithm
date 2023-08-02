@@ -1,6 +1,6 @@
-package com.android.queue;
+package com.algorithm.queue;
 
-import com.android.array.Array;
+import com.algorithm.array.Array;
 
 /**
  * author : cy

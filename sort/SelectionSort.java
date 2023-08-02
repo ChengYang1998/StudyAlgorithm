@@ -1,4 +1,4 @@
-package com.android.sort;
+package com.algorithm.sort;
 
 /**
  * author : cy

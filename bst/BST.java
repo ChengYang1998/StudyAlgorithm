@@ -1,4 +1,4 @@
-package com.android.bst;
+package com.algorithm.bst;
 
 import java.util.*;
 

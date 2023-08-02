@@ -1,6 +1,6 @@
-package com.android.stack;
+package com.algorithm.stack;
 
-import com.android.array.Array;
+import com.algorithm.array.Array;
 
 /**
  * author : cy

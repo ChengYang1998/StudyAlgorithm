@@ -1,4 +1,4 @@
-package com.android.array;
+package com.algorithm.array;
 
 /**
  * author : cy

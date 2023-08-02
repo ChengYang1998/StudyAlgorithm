@@ -1,4 +1,4 @@
-package com.android.sort;
+package com.algorithm.sort;
 
 public class Main {
     private String name;

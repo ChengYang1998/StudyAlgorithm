@@ -1,4 +1,4 @@
-package com.android.queue;
+package com.algorithm.queue;
 
 /**
  * author : cy

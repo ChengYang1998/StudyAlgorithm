@@ -1,7 +1,7 @@
-package com.android.quicksort;
+package com.algorithm.quicksort;
 
-import com.android.sort.ArrayGenerator;
-import com.android.sort.SortingHelper;
+import com.algorithm.sort.ArrayGenerator;
+import com.algorithm.sort.SortingHelper;
 
 import java.util.Arrays;
 import java.util.Random;

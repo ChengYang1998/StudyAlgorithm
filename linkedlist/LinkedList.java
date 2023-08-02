@@ -1,4 +1,4 @@
-package com.android.linkedlist;
+package com.algorithm.linkedlist;
 
 /**
  * author : cy

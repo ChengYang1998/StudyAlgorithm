@@ -1,4 +1,4 @@
-package com.android.binarysearch;
+package com.algorithm.binarysearch;
 
 /**
  * author : cy

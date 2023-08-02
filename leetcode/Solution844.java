@@ -1,4 +1,4 @@
-package com.android.leetcode;
+package com.algorithm.leetcode;
 
 public class Solution844 {
     public boolean backspaceCompare(String s, String t) {

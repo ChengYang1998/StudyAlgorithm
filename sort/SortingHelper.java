@@ -1,7 +1,7 @@
-package com.android.sort;
+package com.algorithm.sort;
 
-import com.android.quicksort.QuickSort;
-import com.android.mergesort.MergeSort;
+import com.algorithm.quicksort.QuickSort;
+import com.algorithm.mergesort.MergeSort;
 
 /**
  * author : cy

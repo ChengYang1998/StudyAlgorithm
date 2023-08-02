@@ -1,7 +1,7 @@
-package com.android.mergesort;
+package com.algorithm.mergesort;
 
-import com.android.sort.ArrayGenerator;
-import com.android.sort.SortingHelper;
+import com.algorithm.sort.ArrayGenerator;
+import com.algorithm.sort.SortingHelper;
 
 import java.util.Arrays;
 

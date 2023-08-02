@@ -1,4 +1,4 @@
-package com.android.stack;
+package com.algorithm.stack;
 
 import java.util.Stack;
 
