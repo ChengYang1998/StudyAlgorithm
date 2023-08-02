@@ -43,9 +43,9 @@ public class BSTSet<E extends Comparable<E>> implements Set<E> {
     }
 
     public static void main(String[] args) {
-        System.out.println("1111");
+        System.out.println("fairyTale.txt");
         ArrayList<String> words1 = new ArrayList<>();
-        FileOperation.readFile("1111.txt", words1);
+        FileOperation.readFile("fairyTale.txt", words1);
         System.out.println("Total words: " + words1.size());
 
         BSTSet<String> set1 = new BSTSet<>();
