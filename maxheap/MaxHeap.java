@@ -54,4 +54,71 @@ public class MaxHeap<E extends Comparable<E>> {
         return index * 2 + 2;
     }
 
+    /**
+     * 向堆中添加元素
+     *
+     * @param e 元素
+     */
+    public void add(E e) {
+        data.addLast(e);
+        siftUp(data.getSize() - 1);
+    }
+
+    /**
+     * 元素上浮
+     *
+     * @param k 元素所在索引
+     */
+    private void siftUp(int k) {
+        while (k > 0 && data.get(parent(k)).compareTo(data.get(k)) < 0) {
+            data.swap(k, parent(k));
+            k = parent(k);
+        }
+    }
+
+    /**
+     * @return 找出堆中最大元素
+     */
+    public E findMax() {
+        if (data.getSize() == 0) {
+            throw new IllegalArgumentException("heap is empty");
+        }
+        return data.get(0);
+    }
+
+    public E extractMax() {
+        E ret = findMax();
+        // 将根元素和末尾元素交换
+        data.swap(0, data.getSize() - 1);
+        // 移除堆中最后一个元素（原来的最大元素）
+        data.removeLast();
+        // 对新的根元素进行下沉操作，以保持最大堆的性质
+        siftDown(0);
+        return ret;
+    }
+
+    /**
+     * 元素下沉
+     *
+     * @param k 元素所在索引
+     */
+    private void siftDown(int k) {
+
+        // 如果元素有左孩子
+        while (leftChild(k) < data.getSize()) {
+            int j = leftChild(k);
+            // 判断元素是否有右孩子，并比较左右孩子的大小
+            if (j + 1 < data.getSize() && data.get(j + 1).compareTo(data.get(j)) > 0) {
+                // 如果右孩子大于左孩子，将j指向右孩子
+                j = rightChild(k);
+            }
+            // 现在，data[j]是leftChild和rightChild中的最大值
+            if (data.get(k).compareTo(data.get(j)) >= 0) {
+                break;
+            }
+
+            data.swap(k, j);
+            k = j;
+        }
+    }
 }

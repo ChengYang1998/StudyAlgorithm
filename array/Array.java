@@ -92,6 +92,18 @@ public class Array<E> {
         data = newData;
     }
 
+    /**
+     * 交换索引为i和j两个索引位置的元素
+     */
+    public void swap(int i, int j) {
+        if (i < 0 || i > size || j < 0 || j > size) {
+            throw new IllegalArgumentException("Invalid index");
+        }
+        E t = data[i];
+        data[i] = data[j];
+        data[j] = t;
+    }
+
     @Override
     public String toString() {
         StringBuilder res = new StringBuilder();
