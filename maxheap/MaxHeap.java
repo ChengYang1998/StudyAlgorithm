@@ -15,6 +15,21 @@ public class MaxHeap<E extends Comparable<E>> {
         data = new Array<>(capacity);
     }
 
+    /**
+     * Heapify
+     *
+     * @param arr 传入的数组
+     */
+    public MaxHeap(E[] arr) {
+        data = new Array<>(arr);
+        if (arr.length != 1) {
+            for (int i = parent(arr.length - 1); i >= 0; i--) {
+                siftDown(i);
+            }
+        }
+
+    }
+
     public MaxHeap() {
         data = new Array<>();
     }
@@ -92,6 +107,19 @@ public class MaxHeap<E extends Comparable<E>> {
         data.swap(0, data.getSize() - 1);
         // 移除堆中最后一个元素（原来的最大元素）
         data.removeLast();
+        // 对新的根元素进行下沉操作，以保持最大堆的性质
+        siftDown(0);
+        return ret;
+    }
+
+    /**
+     * @param e 待替换的元素
+     * @return 取出堆中的最大元素
+     */
+    public E replace(E e) {
+        E ret = findMax();
+        // 将最大元素替换
+        data.set(0, e);
         // 对新的根元素进行下沉操作，以保持最大堆的性质
         siftDown(0);
         return ret;
