@@ -30,7 +30,7 @@ public class HeapSort {
         for (int i = (data.length - 2) / 2; i >= 0; i--) {
             siftDown(data, i, data.length);
         }
-        // 逐渐将堆顶元素放置最后
+        // 逐渐将堆顶元素放置最后 
         for (int i = data.length; i > 0; i--) {
             swap(data, 0, i);
             siftDown(data, 0, i);
